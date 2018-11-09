@@ -1,0 +1,112 @@
+\chapter{Introduction to \LaTeX}
+\label{chap:introLatex}
+
+This document provides information about the use of \LaTeX in thesis/dissertation/report writing for NIT Agartala. 
+
+All the required files are bundled into a folder \verb+Thesis-NITA-2018+ . The folder is available at the homepage of the MIS of the institute. The thesis/dissertation/report is generated with help of a \textbf{modified} \verb+report.cls+. The thesis will be generated (double sided pages) by compling the \verb+thesis-NITA.tex+ file .  This document provides several useful tips to use \LaTeX, when you
+write your thesis.
+
+Before reading any further please note that you are strongly advised
+against changing any of the formatting options used in the class
+provided in this directory, unless you are absolutely sure that it
+does not violate the NITA formatting guidelines.  \emph{Please do not
+  change the margins or the spacing.}  
+
+It is also a good idea to take a quick look at the formatting
+guidelines.  Your office or advisor should have a copy.  If they
+don't, pester them, they really should have the formatting guidelines
+readily available somewhere.
+
+To compile the \LaTeX program windows users may be advised to download and install either \textbf{TexLive} or \textbf{TeXstudio} and \textbf{MikTeX} 
+
+
+\section{Example Figures and tables}
+
+Fig.~\ref{fig:nita} shows a simple figure for illustration along with
+a long caption.  The formatting of the caption text is automatically
+single spaced and indented.  Table~\ref{tab:sample} shows a sample
+table with the caption placed correctly.  The caption for this should
+always be placed before the table as shown in the example.
+
+
+\begin{figure}[htpb]
+  \begin{center}
+    \resizebox{50mm}{!} {\includegraphics *{nita.eps}}
+    \resizebox{50mm}{!} {\includegraphics *{nita.eps}}
+    \caption {Two NITA logos in a row.  This is also an
+      illustration of a very long figure caption that wraps around two
+      two lines.  Notice that the caption is single-spaced.}
+  \label{fig:nita}
+  \end{center}
+\end{figure}
+
+\begin{table}[htbp]
+  \caption{A sample table with a table caption placed
+    appropriately. This caption is also very long and is
+    single-spaced.  Also notice how the text is aligned.}
+  \begin{center}
+  \begin{tabular}[c]{|c|r|} \hline
+    $x$ & $x^2$ \\ \hline
+    1  &  1   \\
+    2  &  4  \\
+    3  &  9  \\
+    4  &  16  \\
+    5  &  25  \\
+    6  &  36  \\
+    7  &  49  \\
+    8  &  64  \\ \hline
+  \end{tabular}
+  \label{tab:sample}
+  \end{center}
+\end{table}
+
+\section{Bibliography with BIB\TeX}
+
+We recommend that you use BIB\TeX\ to automatically generate
+your bibliography.  It makes managing your references much easier.  It
+is an excellent way to organize your references and reuse them.  You
+can use one set of entries for your references and cite them in your
+thesis, papers and reports.  If you haven't used it anytime before
+please invest some time learning how to use it.  
+
+A a simple example BIB\TeX\ file along in this directory
+called \verb+sample.bib+ is included in the folder.  The \verb+thesis-NITA.tex+ uses \verb+natbib+ in this thesis  to format the references along with a customized bibliography
+style called unsrtnat.
+\par Documentation for the \verb+natbib+ package should
+be available in your distribution of \LaTeX.  Basically, to cite the
+author along with the author name and year use \verb+\cite{key}+ where
+\verb+key+ is the citation key for your bibliography entry.  You can
+also use \verb+\citet{key}+ to get the same effect.  To make the
+citation without the author name in the main text but inside the
+parenthesis use \verb+\citep{key}+.  The following paragraph shows how
+citations can be used in text effectively.
+
+
+\section{Other useful \LaTeX\ packages}
+
+The following packages might be useful when writing your thesis.
+
+\begin{itemize}  
+\item It is very useful to include line numbers in your document.
+  That way, it is very easy for people to suggest corrections to your
+  text.  It is recommend the use of the \texttt{lineno} package for this
+  purpose.  This is not a standard package but can be obtained on the
+  internet.  The directory containing this file should contain a
+  lineno directory that includes the package along with documentation
+  for it.
+
+\item The \texttt{listings} package should be available with your
+  distribution of \LaTeX.  This package is very useful when one needs
+  to list source code or pseudo-code.
+
+\item For special figure captions the \texttt{ccaption} package may be
+  useful.  This is specially useful if one has a figure that spans
+  more than two pages and you need to use the same figure number.
+
+\item The notation page can be entered manually or automatically
+  generated using the \texttt{nomencl} package.
+
+\end{itemize}
+
+More details on how to use these specific packages are available along
+with the documentation of the respective packages.

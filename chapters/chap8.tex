@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{\LARGE Conclusions and Scope for Future Work}
+\chapter{Conclusions and Scope for Future Work}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In this thesis, an attempt has been made to model input-output 
+relationships of electron beam welding process. Here, there 
+are many factors, which are responsible to generate good quality 
+welds. In the
+present study, however,  three inputs are utilized to model the 
+process. Various bead-geometric parameters like bead height (not in 
+case of Al-1100), bead width
+and bead penetration have been considered as the outputs along with the
+coordinates of three intuitively  defined points on the weld profile, 
+and micro-hardness of the weld-bead.
+% Chapter 4
+\begin{itemize}
+
+\item As a first step in this study, the experiments have been 
+conducted 
+as per a CCD matrix. This has been done, so that the entire search 
+space is properly covered within the experimental arena. Regression 
+equations have been obtained with the experimental and measured data. 
+As the experiments are conducted as per a CCD, the expected curvatures 
+in the surface plots have been noticed, if they exist. From the surface 
+plots of BH,  we conclude that in order to get minimum BH, the welding 
+should be carried out at the lower accelerating voltage and beam current 
+but at the same time at higher welding speed. Similarly, we conclude 
+that in order to get minimum BW, the welding should be conducted at 
+lower beam current and higher welding speed. However, in order to get 
+the maximum BP, the welding should be performed at a lower speed and 
+higher accelerating voltage and beam current.
+
+\item To effectively utilize the energy to weld two pieces together, the  maximum energy should penetrate along the depth and minimum should flow laterally. In other words, the welded area should be kept to its minimum value, while increasing the penetration to its maximum. This has been accomplished using a GA. A GA with a penalty function approach has been utilized to solve this constrained optimization problem.
+
+
+% Chapter 5
+\item In case of electron beam welding, as it is a high density welding, 
+the weldment will have a  dagger shape instead of customary 
+elliptical. Though a dagger shape is a complex one and is difficult to 
+predict, an intuitive approach has been used in the thesis to 
+predict the complex shape to a great success. The GA-NN is found to 
+perform better than the BPNN in predicting the bead profiles. Being  a 
+gradient-based method, the chance of the BPNN algorithm to get trapped 
+into the local minima is more. On the other hand, the probability of the 
+GA-solutions to get stuck at the local minima is less. Thus, in case of 
+predicting  weld profiles of Al-1100, GA-NN is seen to outperform the 
+BPNN. However, in case of ASS-304, BPNN is found to perform better than 
+the GA-NN in predicting the bead profiles. It has happened so, as the 
+performances of GA and BP algorithm are dependent on the nature of error 
+functions. For a uni-modal error function (which cannot be predicted 
+before-hand), the BP algorithm may outperform the GA. Thus, there is no 
+guarantee that GA-NN will always perform better than the BPNN.
+
+
+
+
+
+
+% Chapter 6
+
+\item In the field of soft computing, as we have to often deal with a  
+huge data set to train networks, the arena of data clustering has been 
+ventured in this thesis. The performances of the existing popular fuzzy 
+clustering techniques have been compared with that of one developed 
+clustering method. It has been shown in the thesis that the newly 
+developed algorithm can cluster the data with greater compactness and 
+distinctness than the existing fuzzy clustering algorithms do. Both the 
+developed algorithm and EFC algorithm have yielded more 
+distinct clusters compared to the FCM algorithm. It is also 
+interesting to note that for one data set (that is, Al-1100), the 
+proposed algorithm has outperformed the other two algorithms in 
+terms of distinctness. The clusters obtained by the newly developed  
+algorithm and FCM algorithm are seen to be more compact compared to 
+those obtained by the EFC algorithm. It is also important to observe 
+that almost the same level of compactness has been achieved by both the 
+newly developed as well as FCM algorithms for ASS-304 data set.
+The performances of clustering algorithms are found to be data-dependent.
+
+
+
+
+
+
+% Chapter 7
+
+\item Finally, the input-output relationships of EBW process have been 
+modeled in both forward as well as reverse directions using radial basis 
+function neural networks. In order to decide the number of 
+hidden neurons, input-output data points have been clustered based on the 
+similarity among the data points using two well-known fuzzy clustering 
+algorithms and one newly proposed algorithm. Three approaches are 
+developed for the forward and reverse mappings each by utilizing three 
+different clustering techniques. The performances of the developed 
+approaches are tested on two different data sets. All these three 
+approaches are found to carry out the forward and reverse mappings 
+successfully within a reasonable accuracy limit. It has happened so, due 
+to the fact that a hybrid scheme of optimization has been adopted in the 
+said three approaches, where a global optimizer like GA has been used 
+simultaneously along with a local optimizer, namely BP algorithm. The 
+difference in the performances of these approaches has come due to the 
+application of different clustering algorithms. Approach 3 is found to 
+be the best out of all the approaches. It may be due to the supremacy of 
+the newly developed clustering technique over the other two existing 
+clustering techniques. To automate any process, its input-output relationships are to be known in both the forward and reverse directions, on-line. Thus, the present study may be considered as an important step towards automating a process.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Scope for Future Work}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The present study can be extended in a number of ways, as stated below.
+\begin{itemize}
+\item This thesis deals with the study on BOP welding carried out on 
+stainless steel (ASS-304) and aluminum (Al-1100) plates. Similar study 
+can be conducted for a more practical welding process like Butt welding, 
+and others.
+
+\item Clustering of input-output data has been done using three 
+algorithms only, which can be attempted in future using some other 
+algorithms.
+
+\item Forward and reverse modelings of EBW process have been carried out 
+utilizing RBFNN. However, some fuzzy logic-based approaches may also be 
+tried for the same  in future.
+
+\item On-line condition monitoring of the EBW process may be attempted 
+in future.
+
+\item It is understood that the output of this welding depends on the input parameters like accelerating voltage, beam current, welding speed, beam radius, extent of defocussing and beam power distribution. All these six input parameters could not be considered in the present study due to some practical problems in the set-up.  The same may be tried out in future.
+\end{itemize}

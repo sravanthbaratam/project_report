@@ -1,0 +1,14 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis-NITA.aux
+The style file: unsrtnat.bst
+A level-1 auxiliary file: chapters/chap1.aux
+A level-1 auxiliary file: chapters/chap2.aux
+A level-1 auxiliary file: chapters/chap3.aux
+A level-1 auxiliary file: chapters/chap4.aux
+A level-1 auxiliary file: chapters/chap5.aux
+Illegal, another \bibdata command---line 29 of file thesis-NITA.aux
+ : \bibdata
+ :         {publications}
+I'm skipping whatever remains of this command
+Database file #1: sample.bib
+Warning--empty year in knuthwebsite
+(There was 1 error message)

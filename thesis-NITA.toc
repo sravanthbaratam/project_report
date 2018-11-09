@@ -1,0 +1,56 @@
+\contentsline {chapter}{Dedication}{i}
+\contentsline {chapter}{Approval}{iii}
+\contentsline {chapter}{Declaration}{v}
+\contentsline {chapter}{Certificate by the Supervisor}{vii}
+\contentsline {chapter}{Acknowledgment}{ix}
+\contentsline {chapter}{Contents}{xi}
+\contentsline {chapter}{List of Figures }{xv}
+\contentsline {chapter}{List of Tables}{xvii}
+\contentsline {chapter}{List of symbols \& Abbreviations}{xix}
+\contentsline {chapter}{Abstract}{xxi}
+\contentsline {chapter}{\numberline {1} Organisation of Thesis/Dissertation/ Report}{1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}
+\contentsline {section}{\numberline {1.2}Report of Present Investigation}{2}
+\contentsline {section}{\numberline {1.3}Results and Discussions}{2}
+\contentsline {section}{\numberline {1.4}Summary and Conclusions}{2}
+\contentsline {section}{\numberline {1.5}Appendix}{3}
+\contentsline {section}{\numberline {1.6}Literature Cited}{3}
+\contentsline {section}{\numberline {1.7}Publications by the candidate}{3}
+\contentsline {chapter}{\numberline {2}Guide to Bibliography}{5}
+\contentsline {chapter}{\numberline {3}Thesis Format}{7}
+\contentsline {section}{\numberline {3.1}Paper quality}{7}
+\contentsline {section}{\numberline {3.2}Paper size}{7}
+\contentsline {section}{\numberline {3.3}Type Setting, Text Processing and Printing}{7}
+\contentsline {subsection}{\numberline {3.3.1}Left and Right Margins}{7}
+\contentsline {subsection}{\numberline {3.3.2}Header}{8}
+\contentsline {subsection}{\numberline {3.3.3}Paragraph}{8}
+\contentsline {section}{\numberline {3.4}Chapter and Section format}{8}
+\contentsline {subsection}{\numberline {3.4.1}Chapter}{8}
+\contentsline {subsection}{\numberline {3.4.2}Sections and Subsections}{8}
+\contentsline {subsection}{\numberline {3.4.3}Table / Figure Format}{9}
+\contentsline {subsection}{\numberline {3.4.4}Non-paper Material}{9}
+\contentsline {chapter}{\numberline {4}Auxiliary Format}{11}
+\contentsline {section}{\numberline {4.1}Binding}{11}
+\contentsline {section}{\numberline {4.2}Front and Side Covers}{11}
+\contentsline {subsection}{\numberline {4.2.1}Lettering in Front Cover and Side Cover}{12}
+\contentsline {section}{\numberline {4.3}Blank Sheets}{12}
+\contentsline {section}{\numberline {4.4}Title Sheet}{12}
+\contentsline {section}{\numberline {4.5}Dedication Sheet}{13}
+\contentsline {section}{\numberline {4.6}Approval Sheet}{13}
+\contentsline {section}{\numberline {4.7}Declaration of Academic Honesty and Integrity}{13}
+\contentsline {section}{\numberline {4.8}Certificate}{14}
+\contentsline {section}{\numberline {4.9}Acknowledgment and Curriculum Vitae}{14}
+\contentsline {section}{\numberline {4.10}Contents}{14}
+\contentsline {section}{\numberline {4.11}List of Figures and List of Tables}{14}
+\contentsline {section}{\numberline {4.12}Symbols, Abbreviation and Notation}{14}
+\contentsline {section}{\numberline {4.13}Abstract}{15}
+\contentsline {section}{\numberline {4.14}Units}{15}
+\contentsline {section}{\numberline {4.15}Pagination}{15}
+\contentsline {chapter}{\numberline {5}Introduction to \LaTeX }{17}
+\contentsline {section}{\numberline {5.1}Example Figures and tables}{18}
+\contentsline {section}{\numberline {5.2}Bibliography with BIBT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{18}
+\contentsline {section}{\numberline {5.3}Other useful \LaTeX \ packages}{19}
+\contentsline {chapter}{Bibliography}{i}
+\contentsline {chapter}{\numberline {A}Specimen of the format of Ph.D. thesis for MS Word users}{iii}
+\contentsline {chapter}{Curriculum Vitae}{xi}
+\contentsline {chapter}{Publicatons of the Scholar}{xiii}

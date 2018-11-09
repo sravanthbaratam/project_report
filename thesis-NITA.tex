@@ -1,0 +1,336 @@
+\documentclass [12pt,openright,twoside]{report}  
+%\documentclass[12pt, a4paper, oneside]{Thesis} % Paper size,
+% for Latex2e
+
+%-------------- Using !...
+\usepackage{supertabular}
+\usepackage{fancyheadings}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{setspace}
+\usepackage{times}
+%\usepackage{latexsym}
+%\usepackage{psfig}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{lscape}
+\usepackage{url}
+\usepackage{appendix}
+\usepackage{pdfpages}
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{unsrtnat}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{emptypage}
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+\usepackage{geometry}[2010/02/26]
+\geometry{
+	a4paper,
+	left=58mm,
+	top=25mm,
+	right=12mm,
+	bottom=25mm,
+	voffset=-10mm
+}
+\def\thetable{\arabic{chapter}.\arabic{table}}
+%------------- Page Layout -------
+
+\textwidth 6.15in    % also can be set to 155mm
+\textheight 9.33in   % standard 
+\oddsidemargin 0.32in % for two side, do not change it 
+\evensidemargin 0.0in
+%\oddsidemargin 0mm % for two side, do not change it 
+\topmargin -0.0in      % do not change
+\hsize 6.5in
+\vsize 10.0in
+
+
+%___________ Paragraph layout --------
+
+\parindent 10mm
+\parskip 10pt               
+
+%----------- Text layout ----------
+
+\newcommand{\takeup}[3]{{\raisebox{1.0ex}{\scriptsize #1}}$\mbox{#2}_{#3}$}
+\abovedisplayskip=1\baselineskip
+\belowdisplayskip=1\baselineskip
+\abovedisplayshortskip=1\baselineskip
+\belowdisplayshortskip=1\baselineskip
+
+%-----------------------------
+
+\begin{document}
+	\setlength{\footskip}{2.5\baselineskip}
+
+
+%___________ Front page_________
+\pagenumbering{roman}
+
+\begin{titlepage}
+\input{cover}
+\thispagestyle{empty}
+\cleardoublepage
+\thispagestyle{empty}
+\cleardoublepage
+\input{title}
+\thispagestyle{empty}
+\cleardoublepage
+\input{side}
+%\nput{side-cover}
+\thispagestyle{empty}
+\cleardoublepage
+\end{titlepage}
+%\cleardoublepage
+% \setcounter{page}{1}
+% \chapter*{Title Page}
+% \input{tp}
+% \addcontentsline{toc}{chapter}{Title Page}
+% \thispagestyle{empty}
+\onehalfspacing
+\input{dedi}
+\addcontentsline{toc}{chapter}{Dedication}
+\setcounter{page}{1}
+\thispagestyle{empty}
+
+\chapter*{Approval}
+\markboth{\small Approval}{\small Approval}
+\addcontentsline{toc}{chapter}{Approval}
+\thispagestyle{empty}
+\input{approval}
+\cleardoublepage
+%__________________________________%_______________
+
+\chapter*{Declaration}
+\markboth{\small Declaration}{\small Declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+\thispagestyle{empty}
+\input{declaration}
+\cleardoublepage
+%\thispagestyle{empty}
+%\end{titlepage}
+%___________________________________________________
+
+
+\chapter*{Certificate}
+\markboth{\small Certificate}{\small Certificate}
+%\input{/sk1/premb/thesis/main/cert}
+\addcontentsline{toc}{chapter}{Certificate by the Supervisor}
+\thispagestyle{empty}
+\input{cert}
+\cleardoublepage
+%\end{titlepage}
+%\cleardoublepage
+%___________________________________________________
+
+
+%___________ Acknowledgement --------
+
+%\pagenumbering{roman}
+%\setcounter{page}{6}
+
+\chapter*{Acknowledgments}
+\markboth{\small Acknowledgment}{\small Acknowledgment}
+\addcontentsline{toc}{chapter}{Acknowledgment}
+\thispagestyle{empty}
+%\input{/sk1/premb/thesis/main/ack}
+%\input{ack}
+\input{acknowldegement}
+\cleardoublepage
+
+%___________ Contents --------
+
+\baselineskip=0.7\normalbaselineskip
+\markboth{\small Contents}{\small Contents}
+\addcontentsline{toc}{chapter}{Contents}
+\thispagestyle{empty}
+\tableofcontents
+\cleardoublepage
+
+
+
+%___________ List of Figures --------
+
+\markboth{\small List of Figures }{\small List of Figures }
+\addcontentsline{toc}{chapter}{List of Figures }
+\thispagestyle{empty}
+\listoffigures
+\cleardoublepage
+
+%___________ List of Tables --------
+
+\markboth{\small List of Tables }{ \small List of Tables}
+\addcontentsline{toc}{chapter}{List of Tables}
+\thispagestyle{empty}
+\listoftables
+\cleardoublepage
+
+%___________ Symbols and Abbreviations --------
+
+\chapter*{List of Symbols \& Abbreviations}
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{List of symbols \& Abbreviations}
+\markboth{\small Nomenclature }{\small Nomenclature }
+\input{nomen}
+\cleardoublepage
+
+
+%___________ Synopsis --------
+\begin{singlespace}
+%\pagenumbering{roman}
+%\setcounter{page}{2}
+\chapter*{Abstract}
+\markboth{\small Abstract}{\small Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\thispagestyle{empty}
+%\input{/sk1/premb/thesis/synop/syn}
+\input{abst}
+\cleardoublepage
+\end{singlespace}
+%___________ Dedication ________
+\onehalfspacing
+
+
+\cleardoublepage
+
+
+\baselineskip   14pt % 1.5 spacing for contents etc.
+\parskip 14pt               
+
+
+
+
+
+
+
+%___________ Parameters for Chapters --------
+
+\baselineskip   17pt %1.5 spacing
+%\baselineskip   20pt %2.0 spacing
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\cleardoublepage
+
+
+%_________Chapter 1
+
+%\include{/sk1/premb/thesis/chap1/mchap1}
+\include{chapters/chap1}
+\cleardoublepage
+
+
+%_________Chapter 2
+%\include{/sk1/premb/thesis/cha2/mchap21}
+\include{chapters/chap2}
+% \cleardoublepage
+
+%_________Chapter 3
+%\include{/sk1/premb/shakti2/tex/mchap3}
+\include{chapters/chap3}
+\cleardoublepage
+
+%_________Chapter 4
+%\include{/sk1/premb/trial/mchap4}
+\include{chapters/chap4}
+\cleardoublepage
+
+%_________Chapter5
+%\include{/sk1/premb/thesis/pap3/mchap5}
+\include{chapters/chap5}
+\cleardoublepage
+
+%_________Chapter6
+%\include{/sk1/premb/thesis/pap3/mchap5}
+%\include{chapters/chap6}
+\cleardoublepage
+
+%______________Chapter7
+%\include{chap7}
+\cleardoublepage
+
+%______________Chapter8
+%\include{chap8}
+\cleardoublepage
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+\cleardoublepage
+\begin{singlespace}
+%___________ Bibliography
+\cleardoublepage
+%\markright{{{ Bibliography\hspace{100mm}}}}
+%\markright{{{ References\hspace{100mm}}}}
+
+%\addcontentsline{toc}{chapter}{References}
+\medskip
+
+\bibliography{sample}
+%\addcontentsline{toc}{chapter}{Bibliography}
+%\include{bib1}
+%\label{Bibliography}
+%
+%\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
+%
+%\bibliographystyle{apalike} % Use the "custom" BibTeX style for formatting the Bibliography
+%
+%\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+\cleardoublepage
+\end{singlespace}
+
+\appendix
+\renewcommand{\thechapter}{\Alph{chapter}}
+\renewcommand{\thetable}{\Alph{chapter}.\arabic{table}}
+\chapter{Specimen of the format of Ph.D. thesis for MS Word users}
+%\includepdf[pages={1}]{Iit-25-eps-converted-to.pdf}
+\includepdf[pages={1-7}]{specimen.pdf}
+%\begin{figure}
+%	\centering 
+%	\includegraphics{Iit-25-eps-converted-to.pdf}
+%\end{figure}
+%\begin{center}
+%  \includegraphics[scale=0.75]{New_specimen_001.jpg}  
+%\end{center}
+\clearpage
+\newpage
+
+%\renewcommand\bibliography{References}
+ 
+
+%\chapter*{Publications}
+%\markboth{\small Publicatons}{\\small Publications}
+%\addcontentsline{toc}{chapter}{Publications}
+%\thispagestyle{empty}
+%\input{publications}
+%\cleardoublepage
+
+\chapter*{Curriculum Vitae}
+\markboth{\small Curriculum Vitae}{\\small Curriculum Vitae}
+\addcontentsline{toc}{chapter}{Curriculum Vitae}
+\thispagestyle{empty}
+\input{cv}
+\cleardoublepage
+
+\renewcommand{\bibname}{Publicatons of the Scholar}
+\bibliography{publications}
+
+%___________ END OF DOCUMENT 
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
